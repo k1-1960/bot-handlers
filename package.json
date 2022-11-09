@@ -1,6 +1,6 @@
 {
   "name": "bot-handlers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Handlers para tu bot de discord.js",
   "main": "index.js",
   "scripts": {
