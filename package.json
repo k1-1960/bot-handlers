@@ -1,0 +1,24 @@
+{
+  "name": "bot-handlers",
+  "version": "1.0.0",
+  "description": "Handlers para tu bot de discord.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k1-1960/bot-handlers.git"
+  },
+  "keywords": [
+    "handlers",
+    "bot",
+    "discord"
+  ],
+  "author": "K1-1960*",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k1-1960/bot-handlers/issues"
+  },
+  "homepage": "https://github.com/k1-1960/bot-handlers#readme"
+}
