@@ -6,17 +6,15 @@ module.exports = (client, pathto) => {
   console.log('[Event Handler]', 'Cargando eventos...');
   fs.readdirSync(path.join(root, pathto))
   .forEach((folder) => {
-    const commands = fs.readdirSync(path.join(path.join(root, pathto), folder))
+    const events = fs.readdirSync(path.join(path.join(root, pathto), folder))
     .filter((f) => f.endsWith('.js'));
 
-    commands.forEach((filename) => {
+    events.forEach((filename) => {
       const event = require(path.join(path.join(path.join(root, pathto), folder), filename));
-
-      command.category = folder;
 
       client.on(event.name, (...args) => event.run(client, ...args));
     });
   });
 
-  console.log('[Event Handler]', `${collection.size}`, 'Eventos cargados.');
+  console.log('[Event Handler]', 'Eventos cargados.');
 };
